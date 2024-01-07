@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -21,19 +25,45 @@
                 </div>
                 <div class="item2">
                     <div class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="item1">
                     <a href="#">Consumer</a>
+                    <div class="line-bar" data-bs-toggle="offcanvas" data-bs-target="#side-nav">
+                        <span class="bar-icon"></span>
+                        <span class="bar-icon"></span>
+                        <span class="bar-icon"></span>
+                    </div>
                 </div>
             </div>
         </header>
+        <div class="offcanvas offcanvas-start" id="side-nav">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="mobile-nav-menu">
+                <ul class="mobile-nav">
+                    <li><a href="#">Why Sparta</a></li>
+                    <li class="mr-10"><a href="products.html">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+            </div>
+        </div>
         <!-- END TOP HEADER -->
 
         <!-- HERO SECTION -->
         <section class="hero-section">
             <div class="container-fluid">
+                <div class="nav-menu">
+                    <ul class="nav">
+                        <li><a href="#">Why Sparta</a></li>
+                        <li class="mr-10"><a href="products.html">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                    </ul>
+                </div>
                 <div class="hero-wrapper">
                     <div class="image-container">
                         <div class="text-left">
@@ -41,23 +71,25 @@
                             <div class="trigger-image" data-content="content-2">Fast</div>
                             <div class="trigger-image" data-content="content-3">Simple</div>
                         </div>
-                        <div class="image-visible show-content" id="content-1">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
-                        </div>
-                        <div class="image-visible" id="content-2">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
-                        </div>
-                        <div class="image-visible" id="content-3">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
-                        </div>
-                        <div class="image-visible" id="content-4">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
-                        </div>
-                        <div class="image-visible" id="content-5">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
-                        </div>
-                        <div class="image-visible" id="content-6">
-                            <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
+                        <div>
+                            <div class="image-visible show-content" id="content-1">
+                                <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
+                            <div class="image-visible" id="content-2">
+                                <img src="assets/images/img2.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
+                            <div class="image-visible" id="content-3">
+                                <img src="assets/images/img3.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
+                            <div class="image-visible" id="content-4">
+                                <img src="assets/images/img1.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
+                            <div class="image-visible" id="content-5">
+                                <img src="assets/images/img2.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
+                            <div class="image-visible" id="content-6">
+                                <img src="assets/images/mobile.png" alt="Image 1" class="center-image" id="image1">
+                            </div>
                         </div>
                         <div class="text-right">
                             <div class="trigger-image" data-content="content-4">Reliable</div>
@@ -70,11 +102,20 @@
         </section>
         <!-- ENDHERO SECTION -->
         <!-- OFFER SECTION -->
-        <section class="offer-section">
+        <section class="offer-section mt-60">
             <div class="container">
                 <div class="offer-wrapper">
                     <div class="row">
-                        <div class="col-md-12"> Sf</div>
+                        <div class="col-md-12 mb-3">
+                            <div id="hero-carousel" class="owl-carousel">
+                                <div class="items">
+                                    <img src="assets/images/banner.png" alt="" />
+                                </div>
+                                <div class="items">
+                                    <img src="assets/images/banner.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -131,7 +172,7 @@
                             <ul>
                                 <li class="ss-color">Simple</li>
                                 <li class="ars-color">Affordable</li>
-                                <li style="color:#1375bc">Secure</li>
+                                <li style="color:#3c65b0">Secure</li>
                                 <li class="ss-color">Speed</li>
                                 <li class="ars-color">Reliable</li>
                                 <li class="ars-color">Support</li>
@@ -223,7 +264,14 @@
         </footer>
         <!-- END FOOTER -->
     </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+
+
 </body>
 
 </html>
